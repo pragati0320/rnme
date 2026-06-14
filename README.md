@@ -46,21 +46,22 @@ Vefiy logged in user remains logged in until logout<br>
 * Language: YAML
 
 ---
+## Project Structure
 
-maestro/
-├── login.yaml
-├── logout.yaml
-├── invalid-login.yaml
-├── search-movie.yaml
-├── search-no-result.yaml
-├── movie-detail.yaml
-├── favorites.yaml
-├── remove-favorite.yaml
-├── session.yaml
-├── offline.yaml
-├── offline-logged-in.yaml
-├──empty-credentials.yaml
-├──profile.yaml
+maestro/<br>
+*login.yaml<br>
+*logout.yaml<br>
+*invalid-login.yaml<br>
+*search-movie.yaml<br>
+*search-no-result.yaml<br>
+*movie-detail.yaml<br>
+*favorites.yaml<br>
+*remove-favorite.yaml<br>
+*session.yaml<br>
+*offline.yaml<br>
+*offline-logged-in.yaml<br>
+*empty-credentials.yaml<br>
+*profile.yaml<br>
 
 
 ---
