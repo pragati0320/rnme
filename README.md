@@ -47,8 +47,6 @@ Vefiy logged in user remains logged in until logout<br>
 
 ---
 
-## Project Structure
-
 maestro/
 ├── login.yaml
 ├── logout.yaml
@@ -56,7 +54,14 @@ maestro/
 ├── search-movie.yaml
 ├── search-no-result.yaml
 ├── movie-detail.yaml
-├── add-favorite.yaml
+├── favorites.yaml
+├── remove-favorite.yaml
+├── session.yaml
+├── offline.yaml
+├── offline-logged-in.yaml
+├──empty-credentials.yaml
+├──profile.yaml
+
 
 ---
 
