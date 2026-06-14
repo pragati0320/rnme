@@ -104,6 +104,9 @@ ChatGPT was used to assist with test planning, coverage analysis, and documentat
 The automation scripts were implemented using Maestro Studio and executed on an Android emulator. Key functionalities were additionally verified through manual testing on a physical device.
 
 ---
+##Why Maestro?
+
+Maestro was chosen for this assignment because it is lightweight, easy to set up, and well-suited for mobile UI automation. It supports Android applications out of the box and allows writing tests in a simple YAML format, making test cases easy to read and maintain.
 
 ## Manual Testing
 All test were performed manually as well while working on automation script.
