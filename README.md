@@ -7,8 +7,9 @@ I used the pre-built APK provided in the repository (Option A) to test the appli
 The APK was installed on an Android Emulator using:
 
 adb install rnme/rnme.apk
+No source code or environment configuration is required
 
-No source code modifications or environment configuration were required.
+
 ---
 
 ## Overview
@@ -102,6 +103,8 @@ ChatGPT was used as an assistant for brainstorming test coverage, reviewing the 
 
 ## Manual Testing
 All test were performed manually as well while working on automation script.
+
+
 
 ## Author
 
