@@ -107,11 +107,3 @@ The automation scripts were implemented using Maestro Studio and executed on an 
 
 ## Manual Testing
 All test were performed manually as well while working on automation script.
-
-
-
-## Author
-
-Pragati Sapkota
-
-QA Automation Engineer Assignment Submission
