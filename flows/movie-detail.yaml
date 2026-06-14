@@ -1,0 +1,23 @@
+# Objective: Verify movie details page opens successfully.
+
+appId: com.anonymous.rnme
+
+---
+- runFlow: login.yaml
+
+# Search movie
+
+- tapOn: "Search movies by title"
+- inputText: "Batman"
+
+# Open details
+
+- tapOn: "The Batman"
+
+# Verify detail page
+
+- assertVisible: "Overview"
+
+# Evidence
+
+- takeScreenshot: movie-detail

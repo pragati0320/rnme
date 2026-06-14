@@ -1,55 +1,107 @@
-# RNME — Movie Explorer
+# RNME Mobile Automation Testing
 
-React Native (Expo) app to browse TMDb movies, save favorites locally, and watch trailers.
+## Application Setup
 
-## Architecture overview
+I used the pre-built APK provided in the repository (Option A) to test the application as a black-box Android application.
 
-- **Routing**: Expo Router (`src/app/`) with tabs + stack routes.
-- **Screens**: UI lives in `src/screens/`; shared UI primitives in `src/components/ui/`.
-- **State**: Redux Toolkit + RTK Query in `src/store/` (`tmdbApi`, slices).
-- **Persistence**: `redux-persist` persists `tmdbApi`, `favorites`, `theme` (AsyncStorage).
-- **Auth**: Supabase auth client in `src/lib/supabase/client.ts`.
+The APK was installed on an Android Emulator using:
 
-## Libraries (purpose)
+adb install rnme/rnme.apk
 
-- **Routing**: `expo-router`
-- **State**: `@reduxjs/toolkit`, `react-redux` (RTK Query for TMDb)
-- **Persistence**: `redux-persist`, `@react-native-async-storage/async-storage`
-- **Auth**: `@supabase/supabase-js`
-- **Lists**: `@shopify/flash-list`
-- **Forms/validation**: `react-hook-form`, `zod`
-- **UI/motion**: `react-native-reanimated`, `expo-image`
-- **Network**: `@react-native-community/netinfo`
-- **Trailers**: `react-native-youtube-bridge`, `react-native-webview`, `expo-web-browser`
+No source code modifications or environment configuration were required.
+---
 
-## API source
+## Overview
 
-- **TMDb**: movie metadata + images.
-- **YouTube**: trailer playback uses video keys from TMDb’s `/movie/{id}/videos`.
+This project contains UI automation tests for the RNME (Movie Explorer) Android application using Maestro.
 
-## Setup & run locally
+### Covered Scenarios
 
-Create a `.env` in the project root:
+Positive Scenarios
+
+Login with valid credentials
+Search Movie
+View Movie Details
+Add to Favorites
+Remove from Favorites
+Watch Trailer
+Logout
+Theme Change (Light/Dark Mode)
+
+Negative Scenarios
+
+Login with invalid credentials
+Validation of authentication error messages
+Session Management
+Verify user session persists after navigation
+Verify authenticated user remains logged in until logout
+---
+
+## Framework
+
+* Tool: Maestro
+* Platform: Android
+* Device: Pixel 8 Emulator (Android 14)
+* Language: YAML
+
+---
+
+## Project Structure
+
+
+maestro/
+├── login.yaml
+├── search-movie.yaml
+├── movie-detail.yaml
+├── add-favorite.yaml
+└──search-no-result.yaml
+├── search-movie.yaml
+├── movie-detail.yaml
+├── add-favorite.yaml
+├── invalid-login.yaml
+└── logout.yaml
+
+---
+
+## Test Credentials
+
+**Email:** [test@rnme.com](mailto:test@rnme.com)
+
+**Password:** Test123$$
+
+---
+
+## Run Tests
+
+Run a single test:
 
 ```bash
-EXPO_PUBLIC_TMDB_API_KEY=your_tmdb_api_key
-EXPO_PUBLIC_TMDB_BASE_URL=https://api.themoviedb.org/3
-
-EXPO_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_anon_key
+maestro test maestro/login.yaml
 ```
+
+Run all tests:
 
 ```bash
-npm install
-npx expo start
+maestro test maestro/
 ```
 
-### Test login
+---
 
-Email: `test@rnme.com`  
-Password: `Test123$$`
+## Preconditions
 
-## Download APK
+* Android emulator is running
+* RNME APK is installed
+* Internet connection is available
+* Test account remains active
 
-- **APK**: [`rnme.apk`](https://raw.githubusercontent.com/sagawrr/rnme/main/rnme.apk)
-> Note: This is a **universal APK**, so the file size is larger (includes multiple CPU architectures).
+---
+## Use of AI Tools
+
+ChatGPT was used as an assistant for brainstorming test coverage, reviewing the test strategy, and refining documentation. All test scenarios, implementationwas done using Maestro Studio emulator and also validated manually over physical device.
+---
+
+## Author
+
+Pragati Sapkota
+
+QA Automation Engineer Assignment Submission

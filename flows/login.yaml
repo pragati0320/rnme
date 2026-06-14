@@ -1,0 +1,23 @@
+appId: com.anonymous.rnme
+---
+- launchApp
+
+#Navigate to Email Field
+- tapOn: "Email"
+- inputText: "test@rnme.com"
+
+#Navigate to Email Field
+- tapOn: "••••••••"
+- inputText: "Test123$$"
+
+#Click on Login Button
+- tapOn: "Log in"
+
+#Navigate to profile 
+
+- tapOn: ", Profile"
+
+#logout
+- tapOn: "Sign out"
+
+

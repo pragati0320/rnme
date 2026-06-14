@@ -1,0 +1,40 @@
+
+
+appId: com.anonymous.rnme
+
+---
+# Login first
+- runFlow: login.yaml
+
+# Verify Browse screen
+- assertVisible: "Browse"
+
+# Search for a movie
+- tapOn: "Search movies by title"
+- inputText: "Batman"
+
+# Wait for results
+- extendedWaitUntil:
+    visible: "Batman"
+
+# Verify search result appears
+- assertVisible: "Batman"
+
+#offline message
+- assertVisible: "You're offline. You may still see what you already loaded until you reconnect."
+
+- tapOn: "Back"
+#clear search
+- tapOn: ""
+#switch tabs
+- tapOn: ", Favorites"
+#favorites listed movie displayed on offline
+- assertVisible: "The Batman, 2022-03-01 · ★ 7.7"
+
+
+
+
+
+
+# Take screenshot for evidence
+- takeScreenshot: search-batman-results
