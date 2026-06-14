@@ -49,19 +49,19 @@ Vefiy logged in user remains logged in until logout<br>
 ## Project Structure
 
 maestro/<br>
-*login.yaml<br>
-*logout.yaml<br>
-*invalid-login.yaml<br>
-*search-movie.yaml<br>
-*search-no-result.yaml<br>
-*movie-detail.yaml<br>
-*favorites.yaml<br>
-*remove-favorite.yaml<br>
-*session.yaml<br>
-*offline.yaml<br>
-*offline-logged-in.yaml<br>
-*empty-credentials.yaml<br>
-*profile.yaml<br>
+login.yaml<br>
+logout.yaml<br>
+invalid-login.yaml<br>
+search-movie.yaml<br>
+search-no-result.yaml<br>
+movie-detail.yaml<br>
+favorites.yaml<br>
+remove-favorite.yaml<br>
+session.yaml<br>
+offline.yaml<br>
+offline-logged-in.yaml<br>
+empty-credentials.yaml<br>
+profile.yaml<br>
 
 
 ---
