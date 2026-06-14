@@ -22,7 +22,7 @@ This ensures the core app value is tested first, followed by edge cases.
 
 4. Usability
 
-The suite is designed so anyone can run it easily. With a simple setup (Maestro + emulator + APK), tests can be executed in under 10 minutes without extra member's effort.
+The suite is designed so anyone can run it easily. With a simple setup (Maestro + emulator + APK), tests can be executed in under 15-30 minutes without extra member's effort.
 
 5. Overall Focus
 
