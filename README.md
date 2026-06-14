@@ -19,7 +19,7 @@ This project contains UI automation tests for the RNME (Movie Explorer) Android 
 
 Positive Scenarios
 
-Login with valid credentials
+Login with valid credentials<br>
 Search Movie
 View Movie Details
 Add to Favorites
