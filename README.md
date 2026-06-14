@@ -35,8 +35,8 @@ Session management <br>
 Verify user session persists after navigation<br>
 Vefiy logged in user remains logged in until logout<br>
 
-**---
-**
+---
+
 ## Framework
 
 * Tool: Maestro
@@ -99,6 +99,9 @@ maestro test maestro/
 
 ChatGPT was used as an assistant for brainstorming test coverage, reviewing the test strategy, and refining documentation. All test scenarios, implementationwas done using Maestro Studio emulator and also validated manually over physical device.
 ---
+
+## Manual Testing
+All test were performed manually as well while working on automation script.
 
 ## Author
 
