@@ -2,7 +2,7 @@
 
 ## Objective
 
-Validate the critical user journeys of the RNME Android application through end-to-end mobile automation from an end-user perspective.
+To validate the critical user experience of the RNME Android application through end-to-end mobile UI automation from a real user perspective.
 
 ## Approach
 
