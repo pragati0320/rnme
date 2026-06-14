@@ -100,7 +100,9 @@ maestro test maestro/
 ---
 ## Use of AI Tools
 
-ChatGPT was used as an assistant for brainstorming test coverage, reviewing the test strategy, and refining documentation. All test scenarios, implementationwas done using Maestro Studio emulator and also validated manually over physical device.
+ChatGPT was used to assist with test planning, coverage analysis, and documentation refinement. <br>
+The automation scripts were implemented using Maestro Studio and executed on an Android emulator. Key functionalities were additionally verified through manual testing on a physical device.
+
 ---
 
 ## Manual Testing
