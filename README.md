@@ -28,7 +28,7 @@ Watch Trailer<br>
 Logout<br>
 Theme Change (Light/Dark Mode)
 
-Negative Scenarios
+Negative Scenarios<br>
 Login with Invalid credentials<br>
 Validation error message on login<br>
 Session management <br>
