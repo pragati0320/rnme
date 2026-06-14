@@ -29,14 +29,14 @@ Logout
 Theme Change (Light/Dark Mode)
 
 Negative Scenarios
-
-Login with invalid credentials
-Validation of authentication error messages
-Session Management
+Login with Invalid credentials
+Validation error message on login
+Session management 
 Verify user session persists after navigation
-Verify authenticated user remains logged in until logout
----
+Vefiy logged in user remains logged in until logout
 
+**---
+**
 ## Framework
 
 * Tool: Maestro
