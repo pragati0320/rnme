@@ -10,6 +10,12 @@ A risk-based approach was used to prioritize high-impact features. Tests were de
 
 ## Test Coverage
 
+## Preconditions
+
+* The provided APK is stable and representative of the application.
+* Test credentials remain valid.
+* Internet connectivity is available for online scenarios.
+  
 ### Authentication
 
 * Valid login
@@ -47,18 +53,14 @@ A risk-based approach was used to prioritize high-impact features. Tests were de
 ## Test Data
 
 
-| Scenario            | Test Data                                                 |
-| ------------------- | --------------------------------------------------------- |
-| Valid Login         | Email: `test@rnme.com`
-                        Password: `Test123$$`           
-                        
-| Invalid Login       | Email: `invalid@rnme.com`
-                        Password: `WrongPassword123` 
-| Movie Search        | `Batman`                                                  |
-| Search – No Results | `xyzabc123`                                               |
-| Favorites           | `The Batman`                                              |
-| Offline Scenarios   | Android Emulator network disabled                         |
-| Theme Validation    | Light, Dark, and System themes                            |
+| Test Scenario       | Input Data / Action                                                              | Expected Flow / Module       |
+| ------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
+| Invalid Login       | Email: [invalid@rnme.com](mailto:invalid@rnme.com)<br>Password: WrongPassword123 | Login Authentication         |
+| Movie Search        | Search Query: Batman                                                             | Movie Search                 |
+| Search – No Results | Search Query: xyzabc123                                                          | Search Results (Empty State) |
+| Favorites           | Movie: The Batman                                                                | Add to Favorites             |
+| Offline Scenarios   | Network disabled (Android Emulator)                                              | Offline Mode Handling        |
+| Theme Validation    | Light, Dark, System themes                                                       | App Theme Settings           |
 
 ## Automation Approach
 
@@ -67,11 +69,6 @@ A risk-based approach was used to prioritize high-impact features. Tests were de
 * Device: Pixel 8 Emulator (Android 14)
 * Test Format: YAML
 
-## Preconditions
-
-* The provided APK is stable and representative of the application.
-* Test credentials remain valid.
-* Internet connectivity is available for online scenarios.
 
 ## Reusability
 
