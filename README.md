@@ -20,20 +20,20 @@ This project contains UI automation tests for the RNME (Movie Explorer) Android 
 Positive Scenarios
 
 Login with valid credentials<br>
-Search Movie
-View Movie Details
-Add to Favorites
-Remove from Favorites
-Watch Trailer
-Logout
+Search Movie<br>
+View Movie Details<br>
+Add to Favorites<br>
+Remove from Favorites<br>
+Watch Trailer<br>
+Logout<br>
 Theme Change (Light/Dark Mode)
 
 Negative Scenarios
-Login with Invalid credentials
-Validation error message on login
-Session management 
-Verify user session persists after navigation
-Vefiy logged in user remains logged in until logout
+Login with Invalid credentials<br>
+Validation error message on login<br>
+Session management <br>
+Verify user session persists after navigation<br>
+Vefiy logged in user remains logged in until logout<br>
 
 **---
 **
