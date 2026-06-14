@@ -36,7 +36,7 @@ A risk-based approach was used to prioritize high-impact features. Tests were de
 
 ### Session Management
 
-* Verify user remains authenticated during app usage
+* Verify user remains logged in during app usage
 * Verify session persists until explicit logout
 
 ### Offline Scenarios
@@ -51,6 +51,7 @@ A risk-based approach was used to prioritize high-impact features. Tests were de
 | ------------------- | --------------------------------------------------------- |
 | Valid Login         | Email: `test@rnme.com`
                         Password: `Test123$$`           
+                        
 | Invalid Login       | Email: `invalid@rnme.com`
                         Password: `WrongPassword123` 
 | Movie Search        | `Batman`                                                  |
@@ -78,12 +79,12 @@ The automation suite is designed to be reusable and executable by any team membe
 
 ## Preconditions
 
-Maestro installed
-Android Studio with an Android Emulator
-RNME APK installed on the emulator/device
-ADB configured and accessible from the command line
-Internet connectivity for online scenarios
-Execution
+Maestro installed<br>
+Android Studio with an Android Emulator<br>
+RNME APK installed on the emulator/device<br>
+ADB configured and accessible from the command line<br>
+Internet connectivity for online scenarios<br>
+Execution<br>
 
 ##Run an individual test:
 
