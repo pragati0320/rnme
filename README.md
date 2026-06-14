@@ -6,7 +6,7 @@ I used the pre-built APK provided in the repository (Option A) to test the appli
 
 The APK was installed on an Android Emulator using:
 
-adb install rnme/rnme.apk
+adb install rnme/rnme.apk <br>
 No source code or environment configuration is required
 
 
@@ -49,18 +49,14 @@ Vefiy logged in user remains logged in until logout<br>
 
 ## Project Structure
 
-
 maestro/
 ├── login.yaml
-├── search-movie.yaml
-├── movie-detail.yaml
-├── add-favorite.yaml
-└──search-no-result.yaml
-├── search-movie.yaml
-├── movie-detail.yaml
-├── add-favorite.yaml
+├── logout.yaml
 ├── invalid-login.yaml
-└── logout.yaml
+├── search-movie.yaml
+├── search-no-result.yaml
+├── movie-detail.yaml
+├── add-favorite.yaml
 
 ---
 
